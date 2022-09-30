@@ -1,0 +1,16 @@
+We're creating an application that will take an URL as input and after taking the URL as an input it will generate a thumbnail of that URL.
+
+PseduoCode for the App:- 
+
+1.) Design the app it will include a basic navbar , one parent div with one textarea , and another div which will include the images.
+2.) We can enter as many URL as we want to and it will show the results in the next container. Every URL will get seperated by comma for identification.
+3.) We're going to use the youtube Image API. (https://img.youtube.com/vi/VideoId/hqdefault.jpg)
+
+
+Main Code for the APP:- 
+
+
+1.) create two components one for text area and second one for displaying the images
+
+
+
