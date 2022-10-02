@@ -22,17 +22,15 @@ import Thumbnail from './Thumbnail'
 
   return (
     <>
-    <Container className='mt-3 d-flex justify-content-center gap-4' style={{maxWidth:"700px"}}>
-        <FloatingLabel controlId="floatingTextarea2" label="Enter the URL" className="d-flex flex-column gap-3">
-          <Form.Control as="textarea" style={{height:"360px" , width:"400px"}} value={text} onChange={(e) => setText(e.target.value)} onBlur={blurHandler}></Form.Control>
+    <Container className='mt-3 d-flex justify-content-center gap-4 flex-wrap' style={{maxWidth:"700px"}}>
+        <FloatingLabel controlId="floatingTextarea2" label="Enter Youtube URL" className="d-flex flex-column gap-3">
+          <Form.Control as="textarea" style={{height:"60px" , minWidth:"300px"}} value={text} onChange={(e) => setText(e.target.value)} onBlur={blurHandler}></Form.Control>
           <a href="Prevent#"className="btn btn-danger" onClick={(e) => {
             e.preventDefault();
             setText("");
           }}>Clear</a>
         </FloatingLabel>
-        <Container className='d-flex flex-column gap-3'>
             <Thumbnail text={text}/>
-        </Container>
     </Container>
     </>
   )
